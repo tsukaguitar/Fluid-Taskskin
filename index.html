@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Fluid-taskskin by tsukaguitar</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1 class="header">Fluid-taskskin</h1>
+        <p class="header">Fluidでアプリ化したGoogle Tasks用のCSSスキン</p>
+
+        <ul>
+          <li class="download"><a class="buttons" href="https://github.com/tsukaguitar/Fluid-Taskskin/zipball/master">Download ZIP</a></li>
+          <li class="download"><a class="buttons" href="https://github.com/tsukaguitar/Fluid-Taskskin/tarball/master">Download TAR</a></li>
+          <li><a class="buttons github" href="https://github.com/tsukaguitar/Fluid-Taskskin">View On GitHub</a></li>
+        </ul>
+
+        <p class="header">This project is maintained by <a class="header name" href="https://github.com/tsukaguitar">tsukaguitar</a></p>
+
+
+      </header>
+      <section>
+        <h1>Fluid Taskskin</h1>
+
+<p>Fluidでアプリ化したGoogle Tasks用のCSSスキン</p>
+
+<h2>説明</h2>
+
+<p>Fluidでアプリ化したGoogle Tasks。とても便利ですが、デザインが無骨でちょっと萎える…<br>
+ならスマホ向けのページでアプリ化すれば…と思ったけど、パソコンで使うにはあのインターフェイスはムダが多い気がする…</p>
+
+<p>という訳でスキン、作りました。これで安心してタスク管理できそうです。</p>
+
+<h2>スクリーンショット</h2>
+
+<ul>
+<li>通常時<br><img src="img/screenshot-1.png" alt="画面1">
+</li>
+<li>マウスをグレーのバーに合わせると…<br><img src="img/screenshot-2.png" alt="画面2">
+</li>
+<li>メニューが開きます<br><img src="img/screenshot-3.png" alt="画面3">
+</li>
+</ul><h2>要件</h2>
+
+<ul>
+<li>FluidでGoogle Tasksをアプリ化していること。</li>
+<li>その際、スマホ向けではなく、PC向けのURLでアプリ化していること。
+
+<ul>
+<li>
+<a href="https://mail.google.com/tasks/canvas">https://mail.google.com/tasks/canvas</a><br>
+（OK：PC向け）</li>
+<li>
+<a href="https://mail.google.com/tasks/android">https://mail.google.com/tasks/android</a><br>
+（NG：Android向け）</li>
+<li>
+<a href="https://mail.google.com/tasks/iphone">https://mail.google.com/tasks/iphone</a><br>
+（NG：iPhone向け）</li>
+</ul>
+</li>
+</ul><h2>インストール方法</h2>
+
+<ol>
+<li>アプリ化したGoogle Tasksのパッケージの内容を表示し、「**Contents/Resources/**」に移動。</li>
+<li>default.cssがあるのを確認したら、ダウンロードしたdefault.cssで上書き。</li>
+<li>アプリを起動するか、既に起動していたら<code>Cmd+R</code>でリロードすれば反映されます。</li>
+</ol><h2>設定</h2>
+
+<p>メニューを非表示にせず、開きっぱなしにもできます。</p>
+
+<h3>設定方法</h3>
+
+<ol>
+<li>cssファイルを開き、一番下まで移動します。</li>
+<li>コメント「<a href="https://github.com/group" class="user-mention">@group</a> Menu」より下のクラス指定（169行目から177行目まで）をコメントアウト／削除し、保存したら完了です。</li>
+</ol><h4>設定後</h4>
+
+<pre lang="default.css"><code>/* @group Menu */
+.gb .goog-toolbar {
+    height: 2px;
+    overflow: hidden;
+    -webkit-transition: all 0.1s ease-in-out;
+}
+.gb .goog-toolbar:hover {
+    min-height: 27px;
+    height: auto;
+}
+/* @end */
+</code></pre>
+
+<h4>設定後</h4>
+
+<pre lang="default.css"><code>/* @group Menu */
+/*.gb .goog-toolbar {
+    height: 2px;
+    overflow: hidden;
+    -webkit-transition: all 0.1s ease-in-out;
+}
+.gb .goog-toolbar:hover {
+    min-height: 27px;
+    height: auto;
+}*/
+/* @end */
+</code></pre>
+
+<h2>既知の問題</h2>
+
+<ul>
+<li>メニュー非表示時、メニューを開いて表示を「日付順」などに変えてメニューを閉じると、下部にグレーの余白が出てしまう。<br><strong>【対策】</strong><br>
+別のリストに切り替える、またはメニューを常に表示すれば回避できます。<br><strong>【解決案】</strong><br>
+背景に画像をひけば解決できそうですが、CSS1ファイルで済ませたいので保留。</li>
+</ul><h2>ライセンス（License）</h2>
+
+<p>Copyright © 2013 <a href="http://www.rakuin.com">tsukaguitar</a><br>
+Licensed under the <a href="http://opensource.org/licenses/mit-license.php">MIT License</a>.</p>
+      </section>
+      <footer>
+        <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+		
+  </body>
+</html>
