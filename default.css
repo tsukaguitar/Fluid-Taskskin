@@ -1,0 +1,178 @@
+/**
+ * Fluid Taskskin
+ *
+ * Google Tasks skin for App created by Fluid.
+ *
+ * @author     tsukaguitar <http://www.rakuin.com>
+ * @copyright  2013 tsukaguitar
+ * @license    http://www.opensource.org/licenses/mit-license.html  MIT License
+ * @version    1.0
+**/
+textarea {resize:both;-webkit-dashboard-region:dashboard-region(control rectangle);}
+button {-webkit-dashboard-region:dashboard-region(control rectangle);}
+input {-webkit-dashboard-region:dashboard-region(control rectangle);}
+
+body {
+	background: #dadada;
+}
+.gb {
+	background: #263340;
+}
+.gb.Z {
+	background: #f6f2ec;
+}
+.Nb {
+	color: #4d3d00 !important;
+	display: none;
+	background-color: #fc0;
+	font-size: 10px !important;
+	padding: 3px 5px 2px;
+	text-align: center;
+	position: absolute;
+	max-width: 200px;
+	z-index: 1
+}
+
+/* @group Header */
+
+.Qb {
+	color: #fff !important;
+	background: #263340 !important;
+	text-shadow: #1d2833 -1px -1px 1px;
+}
+.goog-custom-button {
+	color: #8594a7 !important;
+	background: none !important;
+}
+.goog-custom-button-outer-box, .goog-custom-button-inner-box {
+	border: 0 !important;
+}
+.sc {
+	cursor: pointer;
+	background-position: -159px -4px !important;
+}
+.goog-custom-button-outer-box, .goog-custom-button-inner-box {
+	cursor: pointer;
+}
+
+.Yb {
+	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	left: 146px !important;
+}
+.t, .A, .w {
+	font-size: 10px !important;
+}
+.uc {
+	font-size: 10px !important;
+	position: absolute !important;
+	left: 4px !important;
+	bottom: 2px !important;
+}
+
+/* @end */
+
+/* @group Sidebar */
+
+.Tb {
+	color: #fff !important;
+	text-shadow: #1d2833 -1px -1px 1px;
+	background: #263340;
+	border: none !important;
+	box-shadow: -3px 3px 3px #1d2833 inset;
+}
+.Xb {
+	display: none;
+}
+.Wb .goog-flat-button, .Qb .goog-flat-button {
+	color: #fff !important;
+	line-height: 1.6em;
+	height: 20px !important;
+}
+.ac {
+	line-height: 1.6em;
+	background-position-x: -250px !important;
+	height: 20px !important;
+}
+.Wb .goog-menu {
+	text-shadow: none;
+}
+
+/* @end */
+
+/* @group Toolbar */
+
+.gb .goog-toolbar {
+	padding: 0px !important;
+	background: #dadada none !important;
+}
+.gb .goog-toolbar-button {
+	margin: 2px !important;
+	background: #eee !important;
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border: 1px solid #ccc !important;
+	cursor: pointer !important;
+}
+.gb .goog-toolbar-button-inner-box {
+	color: #263340 !important;
+}
+.gb .goog-toolbar-button.t {
+	background: #dadada !important;
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border: none !important;
+}
+.Nc {
+	margin: 2px !important;
+}
+.goog-toolbar-separator {
+	display: none !important;
+}
+.goog-toolbar-button-active .goog-toolbar-button-outer-box, .goog-toolbar-button-active .goog-toolbar-button-inner-box, .goog-toolbar-button-checked .goog-toolbar-button-outer-box, .goog-toolbar-button-checked .goog-toolbar-button-inner-box, .goog-toolbar-button-selected .goog-toolbar-button-outer-box, .goog-toolbar-button-selected .goog-toolbar-button-inner-box,
+.goog-toolbar-button-hover .goog-toolbar-button-outer-box, .goog-toolbar-button-hover .goog-toolbar-button-inner-box {
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+}
+
+
+/* @end */
+
+/* @group Tasks */
+
+.J {
+	background: #f6f2ec !important;
+}
+.o, .k, .p, .i, .Mb,
+.vc .o, .vc .k, .vc .p, .vc .i, .vc .Mb {
+	padding: 2px 0;
+	border-width: 1px 0 0 !important;
+	border-color: #efe8dc !important;
+}
+.Ob .o,.Ob .k,.Ob .p,.Ob .i,.fb {
+	background-color: #f6e2c4 !important;
+}
+.P .C, .Vb .C {
+	color: #1d2833 !important;
+	text-shadow: #efe8dc -1px -1px 1px;
+}
+.f .goog-flat-menu-button {
+	background: #eee !important;
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border: 1px solid #ccc !important;
+}
+
+/* @end */
+
+/* @group Menu */
+.gb .goog-toolbar {
+	height: 2px;
+	overflow: hidden;
+	-webkit-transition: all 0.1s ease-in-out;
+}
+.gb .goog-toolbar:hover {
+	min-height: 27px;
+	height: auto;
+}
+/* @end */
